@@ -7,6 +7,6 @@ started with buying a Yaesu Automatic Antenna Tuner FC-1000 w/o control unit. I 
 LDG AT-1000 (2003)
 is a asymmetric low-pass 1kW antenna tuner with manual control. Automatic does not really work well and the tuner had some issues with internal EMC. But in general it has good L and C components an uses a Allegro 5832 to control the 15 relays. Allegro 5832 has an 3-wire interface similar to SPI (data, clock, strobe). Some housings have a hole for D-SUB9 connector, but I have not found an controller option. I have have removed the connection between 68HC11 and 5832 (chokes L11, L12 and L13) and connected 5832 with wires to a DSUB9 connector (data, clock, strobe, gnd, 12V). 
 
-Christian Coupler (DL3LAC)
-is symmetric antenna coupler. The main unit contains only L, C and relays and will be controlled with a control unit via a 25-wire cable. 
+Christian Koppler (DL3LAC)
+is a symmetric antenna coupler. The main unit contains only L, C and relays and will be controlled with a control unit via a 25-wire cable (16 pins for relays, 7 pins for 12V, 2 pins spare). I have created an interface board with TI TPIC6A595 driver 2s (2p for inductor relays) and 5V Supply.  
 
