@@ -10,4 +10,6 @@ is a asymmetric low-pass 1kW antenna tuner with manual control. Automatic does n
 Christian Koppler (DL3LAC)
 is a symmetric antenna coupler. The main unit contains only L, C and relays and will be controlled with a control unit via a 25-wire cable (16 pins for relays, 7 pins for 12V, 2 pins spare). I have created an interface board with TI TPIC6A595 driver 2s (2p for inductor relays) and 5V Supply. A arduino uno with rf24 will be connected to this interface for receiving control data from the rf24 transmitter.
 
-The rf24 transmitter will be the same for all 3 antenna tuners. The rf24 receivers are different for each tuner because the tuner hardware (serial interfaces) is different. It is not required to build up 3 receiver but a deicated receiver for each tuner helps to keep the overview.  
+The rf24 transmitter will be the same for all 3 antenna tuners. The rf24 receivers are different for each tuner because the tuner hardware (serial interfaces) is different. It is not required to build up 3 receiver but a dedicated receiver for each tuner helps to keep the overview.  
+
+Software is written very straight forward (no error correction / udp style). GUI does not show the real state after start (only after pushing the button). After start you have to press all off button to set everything to zero/off.Terminal shows the output sequence. 
