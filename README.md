@@ -14,5 +14,5 @@ The rf24 transmitter will be the same for all 3 antenna tuners. The rf24 receive
 
 Software is written very straight forward (no error correction / udp style). GUI does not show the real state after start (only after pushing the button). After start you have to press all off button to set everything to zero/off.Terminal shows the output sequence. 
 
-Additional interface hardware is required for Yaesu and Christian Koppler. The schematics for the Yaesu Tuner has an wrong order for the relays connected to pin 12 to 19 (RL11,10,9,8,7,6,5,1_2 would be better). The python script will correct the misorder with help of a LUT. The board of the LDG Tuner has already the Allegro 5832 shift-register which can directly connected to the external arduino. 
+Additional interface hardware is required for Yaesu and Christian Koppler. The schematics for the Yaesu Tuner has an wrong order for the relays connected to pin 12 to 19 (RL11,10,9,8,7,6,5,1_2 would be better). The python script will correct the misorder with help of a LUT. U1 of the Christian Koppler interface needs a 2nd TPIC6A595 on top (all pins connected except pin18 (nc)) because current output of a single chip is too weak for driving 4 relays in parallel. The board of the LDG Tuner has already the Allegro 5832 shift-register which can directly connected to the external arduino. 
 
