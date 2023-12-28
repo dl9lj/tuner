@@ -48,7 +48,7 @@ Additional interface hardware is required for Yaesu and Christian Koppler. The s
 ![J17](pics/ldg_2.jpg)
 
 #### LDG AT-1000 Tuner
-- rear view
+- rear view with added DSUB9 female
 
 ![J15](pics/ldg_3.jpg)
 
@@ -64,7 +64,7 @@ Additional interface hardware is required for Yaesu and Christian Koppler. The s
 ![J19](pics/ldg_5.jpg)
 
 #### LDG AT-1000 Tuner
-- I have added a female DSUB9 to the rear panel
+- wiring / connection
 
 ![J20](pics/rx1.jpg)
 
