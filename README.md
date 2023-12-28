@@ -12,7 +12,7 @@ is a symmetric antenna coupler. The main unit contains only L, C and relays and 
 
 The RF24 transmitter will be the same for all 3 antenna tuners. The RF24 receivers are different for each tuner because the tuner hardware (serial interface) is different. It is not required to build up 3 receiver but a dedicated receiver for each tuner helps to keep the overview.  
 
-Software is written very straight forward (no error correction / udp style). GUI does not show the real state after start (only after pushing the button). After start you have to press all off button to set everything to zero/off.Terminal shows the output sequence. 
+Software is written very straight forward (no error correction / udp style). GUI does not show the real state after start (only after pushing the button). After start you have to press the "AllOff" button to set everything to zero/off.Terminal shows the output sequence. 
 
 Additional interface hardware is required for Yaesu and Christian Koppler. The schematics for the Yaesu tuner has an wrong order for the relays connected to pin 12 to 19 (RL11,10,9,8,7,6,5,1_2 would be better). Later I have fixed that mistake with jumper wires. In between I have used a python script with LUT to do the correction  but correction in hardware makes programming easier. U1 of the Christian Koppler interface needs a 2nd TPIC6B595 on top (all pins connected except pin18 (nc)) because current output of a single chip is too weak for driving 4 relays in parallel. The board of the LDG Tuner has already the Allegro 5832 shift-register which can directly connected to the external arduino. 
 
