@@ -31,8 +31,8 @@ nc --- rs --- 2 (not used)
 Vin -- wh --- 1
 GND -- bn --- 6
 6 ---- gr --- 5 SS
-4 ---- ye --- 4 MOSI
-5 ---- gn --- 3 SCLK
+4 ---- ye --- 4 SCLK
+5 ---- gn --- 3 MOSI
 nc --- rs --- 2 (not used)
 
 
