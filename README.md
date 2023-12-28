@@ -24,14 +24,77 @@ Additional interface hardware is required for Yaesu and Christian Koppler. The s
 
 ![J14](pics/chr_2.jpg)
 
-#### Christian Koppler with remote receiver (Arduino with RF24 module)
-- this euro box can be put in the backyard to connect the antenna
-- 12V from VRLA battery is required
+#### Interface inside the housing
+- interface female DSUB25
+- tuner male DSUB25
 
 ![J15](pics/chr_3.jpg)
 
-#### Christian Koppler with remote receiver (Arduino with RF24 module)
-- this euro box can be put in the backyard to connect the antenna
-- 12V from VRLA battery is required
+#### Interface board for Christian Koppler
+- with 5V supply fot TPIC6B595 components
+- 2nd 6B595 is soldered on top of U1 (pin 18 not connected)
 
+![J16](pics/ldg_1.jpg)
+
+#### LDG AT-1000 Tuner
+- front view
+
+![J17](pics/ldg_2.jpg)
+
+#### LDG AT-1000 Tuner
+- rear view
+
+![J15](pics/ldg_3.jpg)
+
+#### LDG AT-1000 Tuner
+- top view
+- see wiring to connect Allegro 5832
+
+![J18](pics/ldg_4.jpg)
+
+#### LDG AT-1000 Tuner
+- small pcb with chokes to connect Allegro 5832
+
+![J19](pics/ldg_5.jpg)
+
+#### LDG AT-1000 Tuner
+- rear connection with female DSUB9
+
+![J20](pics/rx_1.jpg)
+
+#### Receiver box
+- Arduino Uno with RF24 module
+
+![J21](pics/rxtx_1.jpg)
+
+#### Receiver and transmitter boxes 
+- looking very similar
+
+![J22](pics/tx_1.jpg)
+
+#### Transmitter box
+- has USB connector for connection to a laptop pc
+- can als act w/o pc (currently only for testing) 
+
+![J23](pics/yae_1.jpg)
+
+#### Yaesu FC-1000 Antenna Tuner
+- top view
+- housing can withstand some raindrops but is not really sealed
+
+![J24](pics/yae_2.jpg)
+
+#### Yaesu FC-1000 Antenna Tuner
+- top view to pcb
+- nice device - 40pin controller were replaced with a small pcp (3 x HC595)
+
+![J25](pics/yae_3.jpg)
+
+#### Yaesu FC-1000 interface board
+- see wiring
+
+![J26](pics/yae_4.jpg)
+
+#### Yaesu FC-1000 interface board
+- error was corrected with jumper wires.
 
