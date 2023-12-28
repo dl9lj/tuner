@@ -1,5 +1,5 @@
 # tuner
-remote control for different antenna tuners
+wireless remote control for different antenna tuners
 
 Yaesu FC-1000 / FC-800
 started with buying a Yaesu Automatic Antenna Tuner FC-1000 w/o control unit. I started with removing the existing controller and thought about to do a replacement with an atmega328p in combination with 3 HC595 shift register. Interface to a laptop pc via uart. I had this setup running (328p firmware in C). But after working with NRF24L01 modules I decided to do the interface wireless. 328p is no longer required but the 595 board can be used.The 3 HC595 are connected via wires and DSUB9 connector to an externel arduino with NRF24L01 module. I wrote a python script with slider and radio buttons. Best band settings were programmed to radio buttons of the script. Later I found out, that my FT-840 has a controller included and I only need to have a cable... But the new setup is more flexible and can be used with any transceiver. 
