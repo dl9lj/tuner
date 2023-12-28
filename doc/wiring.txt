@@ -1,0 +1,81 @@
+This is the leading document for wiring. 2023-12-28
+
+During development wiring sometimes changes. Wrong schematics, mixing connectors (female / male)
+sometimes leads to different pin numbers. Schematics will not be updated immediately. So I have
+checked again all connections and wrote the result to this document.
+
+While making pictures I found out, that I also had fixed the mixedup pins on the yaesu interface
+board. So the python script does not longer need the LUT. This helps me to avoid I will get some 
+mixup in my brain.
+
+1. Connecting RF24 to Arduino Uno is in all applications (rx/tx) the same.
+Check where GND is and start wiring. A 10uF elcap is required (3V3 to GND).
+I have added 100nF in parallel.
+
+12 --o o--nc
+13 --o o--11
+ 7 --o o-- 8
+GND--o o--3V3
+
+   
+2. Arduino Rx for LDG (Arduino --- DSUB9 male)
+Vin -- wh --- 1
+GND -- bn --- 6
+3 ---- gr --- 5
+4 ---- ye --- 4
+5 ---- gn --- 3
+nc --- rs --- 2 (not used)
+
+
+3. Arduino Rx for Christian Koppler (Arduino --- DSUB9 male)
+Vin -- wh --- 1
+GND -- bn --- 6
+6 ---- gr --- 5
+4 ---- ye --- 4
+5 ---- gn --- 3
+nc --- rs --- 2 (not used)
+
+
+4. Yaesu DSUB9 female
+12V --rd/wh --1
+nc -----------2
+6  ----gn-----3
+4  ----ye-----4
+5 -----gr-----5
+GND ---bk-----6
+
+
+5. Christian Koppler interface U1/U2 to 26p 2row connector
+x----26 o o 25 -- 1.6
+1.5--24 o o 23 -- 1.7
+1.4--22 o o 21 -- 1.14
+x----20 o o 19 -- 1.15
+x----18 o o 17 -- 1.16
+12V--16 o o 15 -- 2.4
+12V--14 o o 13 -- 2.5
+12V--12 o o 11 -- 2.6
+12V--10 o o 9 --- 2.7
+12V---8 o o 7 --- 2.14
+12V---6 o o 5 --- 2.15
+12V---4 o o 3 --- 2.16
+1.17--2 o o 1 --- 2.17
+
+
+6. Christian Koppler interface MTA100 to DSUB9 female
+12V  1 --rd-- 6
+MOSI 2 ------ 2
+SCK  3 ------ 5
+SS   4 ------ 4
+OE   5 ------ 3 (connected to GND (J1))
+GND  6 --bk-- 1
+
+
+
+
+
+
+
+
+
+
+
