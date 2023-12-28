@@ -39,9 +39,9 @@ nc --- rs --- 2 (not used)
 4. Yaesu DSUB9 female
 12V --rd/wh --1
 nc -----------2
-6  ----gn-----3
-4  ----ye-----4
-5 -----gr-----5
+6  ----gn-----3 MOSI
+4  ----ye-----4 SCLK
+5 -----gr-----5 LATCH
 GND ---bk-----6
 
 
