@@ -22,4 +22,16 @@ Additional interface hardware is required for Yaesu and Christian Koppler. The s
 - this euro box can be put in the backyard to connect the antenna
 - 12V from VRLA battery is required
 
+![J14](pics/chr_2.jpg)
+
+#### Christian Koppler with remote receiver (Arduino with RF24 module)
+- this euro box can be put in the backyard to connect the antenna
+- 12V from VRLA battery is required
+
+![J15](pics/chr_3.jpg)
+
+#### Christian Koppler with remote receiver (Arduino with RF24 module)
+- this euro box can be put in the backyard to connect the antenna
+- 12V from VRLA battery is required
+
 
