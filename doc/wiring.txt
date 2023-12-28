@@ -30,9 +30,9 @@ nc --- rs --- 2 (not used)
 3. Arduino Rx for Christian Koppler (Arduino --- DSUB9 male)
 Vin -- wh --- 1
 GND -- bn --- 6
-6 ---- gr --- 5
-4 ---- ye --- 4
-5 ---- gn --- 3
+6 ---- gr --- 5 SS
+4 ---- ye --- 4 MOSI
+5 ---- gn --- 3 SCLK
 nc --- rs --- 2 (not used)
 
 
