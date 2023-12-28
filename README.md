@@ -38,7 +38,7 @@ Additional interface hardware is required for Yaesu and Christian Koppler. The s
 
 #### Interface board for Christian Koppler
 - with 5V supply fot TPIC6B595 components
-- 2nd 6B595 is soldered on top of U1 (pin 18 not connected)
+- 2nd TPIC6B595 is soldered on top of U1 (pin 18 not connected)
 
 ![J16](pics/ldg_1.jpg)
 
@@ -54,7 +54,7 @@ Additional interface hardware is required for Yaesu and Christian Koppler. The s
 
 #### LDG AT-1000 Tuner
 - top view
-- see wiring to connect Allegro 5832
+- see wiring to connect Allegro UCN5832
 
 ![J18](pics/ldg_4.jpg)
 
