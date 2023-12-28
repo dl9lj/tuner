@@ -16,17 +16,23 @@ Software is written very straight forward (no error correction / udp style). GUI
 
 Additional interface hardware is required for Yaesu and Christian Koppler. The schematics for the Yaesu tuner has an wrong order for the relays connected to pin 12 to 19 (RL11,10,9,8,7,6,5,1_2 would be better). Later I have fixed that mistake with jumper wires. In between I have used a python script with LUT to do the correction  but correction in hardware makes programming easier. U1 of the Christian Koppler interface needs a 2nd TPIC6A595 on top (all pins connected except pin18 (nc)) because current output of a single chip is too weak for driving 4 relays in parallel. The board of the LDG Tuner has already the Allegro 5832 shift-register which can directly connected to the external arduino. 
 
+![J12](pics/gui.png)
+
+#### GUI
+- simple GUI with wxPython
+- start with "AllOff" and set all buttons to 0
+- output data will be printed on the terminal window
+
 ![J13](pics/chr_1.jpg)
 
 #### Christian Koppler with remote receiver (Arduino with RF24 module)
-- this euro box can be put in the backyard to connect the antenna
-- 12V from VRLA battery is required
+- this euro box can be put with some rain protection in the backyard to connect the antenna
+- 12V from VRLA battery will be used
 
 ![J14](pics/chr_2.jpg)
 
 #### Interface inside the housing
-- interface female DSUB25
-- tuner male DSUB25
+- tuner pcb has a male DSUB25 connector
 
 ![J15](pics/chr_3.jpg)
 
@@ -58,7 +64,7 @@ Additional interface hardware is required for Yaesu and Christian Koppler. The s
 ![J19](pics/ldg_5.jpg)
 
 #### LDG AT-1000 Tuner
-- rear connection with female DSUB9
+- I have added a female DSUB9 to the rear panel
 
 ![J20](pics/rx_1.jpg)
 
@@ -73,19 +79,18 @@ Additional interface hardware is required for Yaesu and Christian Koppler. The s
 ![J22](pics/tx_1.jpg)
 
 #### Transmitter box
-- has USB connector for connection to a laptop pc
-- can als act w/o pc (currently only for testing) 
+- has USB connector for the connection to a laptop pc
+- can also act w/o pc (currently only for testing) 
 
 ![J23](pics/yae_1.jpg)
 
 #### Yaesu FC-1000 Antenna Tuner
 - top view
-- housing can withstand some raindrops but is not really sealed
+- housing can withstand some raindrops (but not for a longer period)
 
 ![J24](pics/yae_2.jpg)
 
 #### Yaesu FC-1000 Antenna Tuner
-- top view to pcb
 - nice device - 40pin controller were replaced with a small pcp (3 x HC595)
 
 ![J25](pics/yae_3.jpg)
@@ -96,5 +101,5 @@ Additional interface hardware is required for Yaesu and Christian Koppler. The s
 ![J26](pics/yae_4.jpg)
 
 #### Yaesu FC-1000 interface board
-- error was corrected with jumper wires.
+- error was corrected with jumper wires
 
