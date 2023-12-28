@@ -21,9 +21,9 @@ GND--o o--3V3
 2. Arduino Rx for LDG (Arduino --- DSUB9 male)
 Vin -- wh --- 1
 GND -- bn --- 6
-3 ---- gr --- 5
-4 ---- ye --- 4
-5 ---- gn --- 3
+3 ---- gr --- 5 STROBE
+4 ---- ye --- 4 SCLK
+5 ---- gn --- 3 MOSI
 nc --- rs --- 2 (not used)
 
 
@@ -35,15 +35,13 @@ GND -- bn --- 6
 5 ---- gn --- 3 MOSI
 nc --- rs --- 2 (not used)
 
-
-4. Yaesu DSUB9 female
-12V --rd/wh --1
-nc -----------2
-6  ----gn-----3 MOSI
-4  ----ye-----4 SCLK
-5 -----gr-----5 LATCH
-GND ---bk-----6
-
+4. Arduino Rx for Yaesu Tuner (Arduino --- DSUB9 male)
+Vin -- wh --- 1
+GND -- bn --- 6
+6 ---- gr --- 5 LATCH
+4 ---- ye --- 4 SCLK
+5 ---- gn --- 3 MOSI
+nc --- rs --- 2 (not used)
 
 5. Christian Koppler interface U1/U2 to 26p 2row connector
 x----26 o o 25 -- 1.6
