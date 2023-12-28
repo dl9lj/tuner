@@ -70,6 +70,8 @@ Additional interface hardware is required for Yaesu and Christian Koppler. The s
 
 #### Receiver box
 - Arduino Uno with RF24 module
+- Yaesu and Christian Koppler can use the same hardware (Arduino pins 4,5,6) but need different code
+- LDG uses Arduino pins 3,4,5
 
 ![J21](pics/rxtx_1.jpg)
 
