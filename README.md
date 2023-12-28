@@ -16,10 +16,10 @@ Software is written very straight forward (no error correction / udp style). GUI
 
 Additional interface hardware is required for Yaesu and Christian Koppler. The schematics for the Yaesu tuner has an wrong order for the relays connected to pin 12 to 19 (RL11,10,9,8,7,6,5,1_2 would be better). Later I have fixed that mistake with jumper wires. In between I have used a python script with LUT to do the correction  but correction in hardware makes programming easier. U1 of the Christian Koppler interface needs a 2nd TPIC6A595 on top (all pins connected except pin18 (nc)) because current output of a single chip is too weak for driving 4 relays in parallel. The board of the LDG Tuner has already the Allegro 5832 shift-register which can directly connected to the external arduino. 
 
-![J13](pics/chr_1.JPG)
+![J13](pics/chr_1.jpg)
 
-#### Amplifier Board with 10 dB Attenuator
-- input circuit just attenuator and a 1nF capacitor (seems that nxp has not finished the reference circuit for 13.56MHz)
-- attenuator with 3 resistors (100-75-100 Ohm)
+#### Christian Koppler with remote receiver (Arduino with RF24 module)
+- this euro box can be put in the backyard to connect the antenna
+- 12V from VRLA battery is required
 
 
